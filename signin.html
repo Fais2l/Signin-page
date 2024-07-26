@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>sing in</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+ <div class="login-container">
+  <h2>Creat Account</h2>
+
+  <!--The form of sign in page-->   
+    <form action="/signin.php" method="post">
+   
+  
+       <div class="input-group">
+           <label for="username">Username</label>
+           <input type="text" id="username" name="username" placeholder="Enter your username" required>
+       </div>
+    
+        <div class="input-group">
+           <label for="email">Email</label>
+           <input type="Email" id="email" name="email" placeholder="Enter your email" required>
+       </div>
+
+       <div class="input-group">
+           <label for="password">Password</label>
+           <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+       </div>
+
+       <div class="sign-in">
+          <button type="submit">Sign in</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
