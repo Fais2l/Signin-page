@@ -1,0 +1,106 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+ font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.signin-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(216, 213, 213);
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+.signin-container h2{
+     margin-bottom: 20px;
+     color: #333;
+}
+
+.input-group{
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-groupl label{
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover { 
+    /*add some hover here*/  
+    font-weight:bold;
+}
+
+/*social media icons*/
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 2rem;
+    transition: color 0.3s transform ease;
+    position: relative;
+    overflow: hidden;
+}
+.social-icons a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 200%;
+    height: 400%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0) 70%);
+    transform: translate(-50%, -50%) rotate(25deg);
+    transition: left 0.5s ease;
+}
+.social-icons a:hover::before {
+    left: 100%;
+}
+.social-icons a.github:hover {
+    color: #0a2e5c;
+}
+
+.social-icons a.twitter:hover {
+    color: #1da1f2;
+}
+.social-icons a.linkedin:hover {
+    color: #0077b5;
+}
