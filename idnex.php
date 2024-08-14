@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creat Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+ <div class="signin-container">
+  <h2>Creat Account</h2>
+
+  <!--The form of sign in page-->   
+    <form action="signin.php" method="post">
+   
+  
+       <div class="input-group">
+           <label for="username">Username</label>
+           <input type="text" id="username" name="username" placeholder="Enter your username" required>
+       </div>
+    
+        <div class="input-group">
+           <label for="email">Email</label>
+           <input type="Email" id="email" name="email" placeholder="Enter your email" required>
+       </div>
+
+       <div class="input-group">
+           <label for="password">Password</label>
+           <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+       </div>
+
+       <div class="input-group">
+           <label for="password">Confirm Password</label>
+           <input type="password" id="conpassword" name="conpassword" placeholder="Enter your Password again" required>
+       </div>
+       
+      <!--Add Checkbox here-->
+
+       <div class="sign-in">
+          <button type="submit">Create Account</button>
+      </div>
+
+      <!--cocial meda icons -->
+
+      <div class="social-icons">
+        <a href="https://github.com/Fais2l" target="_blank" class="github">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" class="twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="www.linkedin.com/in/faisal-mzyad" target="_blank" class="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+    </form>
+  </div>
+ 
+ 
+
+
+
+</body>
+</html>
