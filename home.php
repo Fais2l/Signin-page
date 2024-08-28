@@ -3,7 +3,7 @@
 session_start();
 
 // Check if the user is logged in
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['username'])) { //nots(You have learn waht $_SESSION['username'] what is doing to return and open index.php)
     header('Location: index.php');
     exit();
 }
@@ -18,7 +18,7 @@ if (!isset($_SESSION['username'])) {
     <title>Home</title>
 </head>
 <body>
-    <h1>Hellow world, <?php echo $_SESSION['username']; ?>!</h1>
+    <h1>Hellow Faisal, <?php echo $_SESSION['username']; ?>!</h1>
     <p>finally you did it xf you are the best just few days and you will be better</p>
 
     <form action="logout.php">
